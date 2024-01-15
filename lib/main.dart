@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+
+import 'app_route.dart';
+import 'counter/maincounter.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+      //onGenerateRoute: AppRoute.onGenerateRoute,
+    );
+  }
+}
